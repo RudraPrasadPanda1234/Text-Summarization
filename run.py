@@ -96,6 +96,7 @@ elif page == "Settings":
     # st.write("Description: This app summarizes text using a custom-trained NLP model.")
 
 # Footer with copyright and developer info, fixed at the bottom
+# Footer with copyright and developer info, fixed at the bottom
 st.markdown("""
     <style>
     /* Fixed footer at the bottom of the page */
@@ -104,21 +105,41 @@ st.markdown("""
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #f1f1f1;
+        background-color: #f9f9f9;
         text-align: center;
         padding: 10px 0;
         font-size: 12px;
-        color: gray;
+        color: #333;
+        box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
         z-index: 1000;
     }
     .footer a {
-        color: #1e90ff;
         text-decoration: none;
+        margin: 0 15px;
+        display: inline-block;
+    }
+    .footer-icons img {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0.8;
+    }
+    .footer-icons img:hover {
+        transform: scale(1.2);
+        opacity: 1;
     }
     </style>
 
     <div class="footer">
         &copy; 2024 Text Summarization App. All Rights Reserved.<br>
-        Developed by <strong>TEAM RAR</strong><br>
+        Developed by <strong>Rudra Prasad Panda</strong><br>
+        <div class="footer-icons">
+            <a href="https://github.com/RudraPrasadPanda1234" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/rudraprpanda/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+            </a>
+        </div>
     </div>
 """, unsafe_allow_html=True)
