@@ -96,7 +96,6 @@ elif page == "Settings":
     # st.write("Description: This app summarizes text using a custom-trained NLP model.")
 
 # Footer with copyright and developer info, fixed at the bottom
-# Footer with copyright and developer info, fixed at the bottom
 st.markdown("""
     <style>
     /* Fixed footer at the bottom of the page */
