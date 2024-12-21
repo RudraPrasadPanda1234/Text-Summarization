@@ -24,13 +24,49 @@
 ![Pull Request](https://img.shields.io/github/issues-pr/RudraPrasadPanda1234/Text-Summarization)
 
 ## Table Of Contents
-* [Workflows](#workflows)
+* [About The Project](#about-the-project)
 * [Features](#features)
 * [Built With](#built-with)
+* [Project Screenshots](#project-screenshots)
 * [How to run?](#how-to-run)
 * [Contributing Guidlines](#contributing-guidlines)
+# About The Project
+The Text Summarization Project is an end-to-end Natural Language Processing (NLP) solution designed to extract concise summaries from extensive texts. This project leverages advanced transformer-based architectures to generate human-like, accurate, and context-aware text summaries. Built with flexibility and scalability in mind, the system is suitable for use cases ranging from summarizing news articles to legal documents, business reports, and beyond.<br>
+This project includes robust functionalities such as data ingestion, preprocessing, model training, and deployment, and is designed to fit into a seamless machine learning pipeline. By integrating CI/CD pipelines and MLOps practices, this application ensures efficient development, deployment, and continuous improvement.
 
-# Workflows
+# Features
+- **Text Summarization:**
+  - Generates concise and meaningful summaries for long texts.
+  - Supports **abstractive summarization** using **transformer-based models** such as **BART**, **T5**, and **GPT**.
+
+- **Data Validation and Ingestion:**
+  - Automated validation of dataset integrity.
+  - Fetches data from specified sources and processes it for training.
+
+- **Model Training and Fine-tuning:**
+  - Fine-tunes pre-trained models like **BART**, **T5**, or **GPT** for summarization tasks.
+  - Supports configurable hyperparameters for training.
+
+- **Evaluation Metrics:**
+  - Integrates evaluation metrics such as **ROUGE** and **BLEU** for comprehensive performance assessment.
+
+- **API Deployment:**
+  - Exposes summarization functionality via **REST APIs** using **FastAPI**.
+  - Real-time summarization for user-provided input.
+
+- **MLOps Monitoring:**
+  - Implements monitoring for deployed models to ensure performance consistency.
+  - Tracks **model versioning**, training metrics, and deployment logs using tools like **MLflow**.
+
+- **User-Friendly Interface:**
+  - Dynamic backend integration with visual representations of results.
+
+- **Scalable Deployment:**
+  - **Dockerized application** for scalable and portable deployments.
+  - **CI/CD pipelines** using **GitHub Actions** for seamless updates and maintenance.
+
+
+<!-- # Workflows
 1. Update config.yaml
 2. Update params.yaml
 3. Update entity
@@ -38,7 +74,22 @@
 5. update the conponents
 6. update the pipeline
 7. update the main.py
-8. update the app.py
+8. update the app.py -->
+   
+# Built With
+* ***Programming Language:*** Python
+* ***Frameworks:*** PyTorch, Hugging Face Transformers, FastAPI
+* ***Libraries:***
+  - **NLP and Summarization**: Hugging Face Transformers, NLTK, Datasets
+  - **Evaluation:** SacreBLEU, ROUGE-Score
+  - **Utilities:** tqdm, pandas, PyYAML, matplotlib
+* ***MLOps Tools***:
+  - **Version Control:** Git, GitHub Actions
+  - **Model Deployment:** FastAPI, Uvicorn, Docker
+  - **Monitoring:** MLflow, Prometheus
+  - **Cloud Services:** AWS S3 For storing training data and model checkpoints, Boto3, CI/CD pipelines for deployment automation.
+  
+
 
 # How to run?
 ### STEPS:
